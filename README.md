@@ -21,11 +21,11 @@ Normally we could use regression for this task; however, we will be converting t
 - **Question**: Why would we want this to be a classification problem?
 - **Answer**: While more precision may be better, there is a fair amount of natural variance in job salaries; therefore, predicting a range **(above the median or below the median)** may be useful.
 
-The first part of assignment will focus on scraping [Indeed.com](www.indeed.com) and the second will focus on using the listings with salary information to build a model and make predictions.
+The first part of assignment will focus on scraping [Indeed.com](https://www.indeed.com) and the second will focus on using the listings with salary information to build a model and make predictions.
 
 Your job is to:
 
-1. Collect data from [Indeed.com](www.indeed.com) on data science salary trends for your analysis.
+1. Collect data from [Indeed.com](https://www.indeed.com) on data science salary trends for your analysis.
   - Select and parse data from at least 1000 postings for jobs, potentially from multiple location searches.
 2. Find out what factors most directly impact salaries (title, location, department, etc.). In this case, we do not want to predict salary as would be done in a regression. Your boss instead believes that salary is better represented in categories. These categories will be **1 if above the median, and 0 if below the median**. If a salary happens to be at the median, allot that to the "0" category.
   - Test, validate, and describe your models. What factors predict salary category? How do your models perform?
@@ -90,13 +90,11 @@ Your job is to:
 
 ### Project Feedback + Evaluation
 
-[Attached here is a complete rubric for this project.](./project-04-rubric.md)
-
 Your instructors will score your project using the scale below:
 
-    Score | Expectations
-    ----- | ------------
-    **0** | _Incomplete._
-    **1** | _Does not meet expectations._
-    **2** | _Meets expectations, good job!_
-    **3** | _Exceeds expectations, you wonderful creature, you!_
+   | Score | Expectations |
+   | ----- | ------------ |
+  |  **0** | _Incomplete._ |
+  |  **1** | _Does not meet expectations._ |
+   | **2** | _Meets expectations, good job!_ |
+   | **3** | _Exceeds expectations, you wonderful creature, you!_ |
