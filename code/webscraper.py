@@ -3,14 +3,31 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import time
 
-DEFAULT_CITIES = {'New York', 'Chicago', 'San Francisco', 'Austin', 'Seattle',
-                  'Los Angeles', 'Philadelphia', 'Atlanta', 'Portland'}
 
-YOUR_CITIES = {'Boston', 'Washington DC', 'San Diego'}
+DEFAULT_CITIES = {'New York', 'Chicago', 'San Francisco', 'Austin', 'Seattle',
+                  'Los Angeles', 'Philadelphia', 'Atlanta', 'Dallas',
+                  'Pittsburgh', 'Portland', 'Phoenix', 'Denver', 'Houston',
+                  'Miami'}
+
+YOUR_CITIES = {'Boston', 'Washington DC', 'St Louis', 'San Diego',
+               'San Antonio', 'Columbus', 'Sacramento', 'Charlotte', 'Memphis',
+               'Detroit', 'Nashville', 'Jacksonville', 'Indianapolis',
+               'Fort Worth', 'Charlotte', 'El Paso', 'Oklahoma City',
+               'Las Vegas', 'Louisville', 'Milwaukee', 'Albuquerque', 'Tucson',
+               'Kansas City', 'Mesa', 'Colorado Springs', 'Raleigh', 'Omaha',
+               'Virginia Beach', 'Minneapolis', 'New Orleans', 'Tampa',
+               'San Jose', 'Baltimore', 'Fresno', 'Oakland', 'Tulsa', 'Madison',
+               'Arlington', 'Wichita', 'Cleveland', 'Aurora', 'Honolulu',
+               'Orlando', 'Anchorage', 'Des Moines', 'Salt Lake City',
+               'Lexington', 'Cincinnati', 'Newark', 'Durham', 'Buffalo',
+               'Baton Rouge', 'Richmond', 'Boise', 'Birmingham', 'Little Rock',
+               'Grand Rapids', 'Worcester', 'Providence', 'Sioux Falls',
+               'Jackson', 'Hartford', 'Bridgeport', 'Jersey City', 'Charleston',
+               'Billings', 'Fargo', 'Augusta'}
 
 URL = "http://www.indeed.com/jobs"
 PARAMS = {'q': 'data scientist', 'radius': '100'}
-MAX_RESULTS_PER_CITY = 100
+MAX_RESULTS_PER_CITY = 1000
 CSV_NAME = 'indeed.csv'
 DEDUP_CSV_NAME = 'indeed_dedup.csv'
 
